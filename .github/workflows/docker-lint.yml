@@ -1,0 +1,15 @@
+name: ❄ Lint Dockerfile
+
+on: push
+
+jobs:
+  linter:
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/checkout@v3
+
+      - name: Lint Dockerfile
+        uses: hadolint/hadolint-action@0a6d062e780d218ea909a18365e0ab2e36d09612
+        with:
+          verbose: true
