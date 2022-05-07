@@ -33,7 +33,7 @@ COPY --from=builder /etc/passwd /etc/passwd
 COPY --from=builder /thttpd/thttpd /
 
 # Use our non-root user
-#USER static
+USER static
 ### disabling omits CrashLoopBackOff in k8s
 ### probably due to SecurityContext settings
 
