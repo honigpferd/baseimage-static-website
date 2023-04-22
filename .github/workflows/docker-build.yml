@@ -14,7 +14,7 @@ on:
 
 jobs:
   docker:
-    uses: honigpferd/docker-buildx-workflow/.github/workflows/docker-buildx.yml@v1
+    uses: honigpferd/docker-buildx-workflow/.github/workflows/docker-buildx.yml@v1.1
     permissions:
       contents: read
       packages: write

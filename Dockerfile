@@ -1,11 +1,11 @@
-FROM alpine:3.15.4 AS builder
+FROM alpine:3.16.5 AS builder
 
 ARG THTTPD_VERSION=2.29
 
 # Install all dependencies required for compiling thttpd
 RUN apk --no-cache add \
-  gcc=10.3.1_git20211027-r0 \
-  musl-dev=1.2.2-r7 \
+  gcc=11.2.1_git20220219-r2 \
+  musl-dev=1.2.3-r2 \
   make=4.3-r0
 
 # Download thttpd sources
